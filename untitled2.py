@@ -1,20 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr  2 09:40:31 2023
-
-@author: pujaa
-"""
-
-# -*- coding: utf-8 -*-
 import numpy as np
 import pickle
 import streamlit as st
+from PIL import Image
 
+image = Image.open('/home/sentieo/Deploying_ml/image.jpg')
+st.image(image)
 
-
-
-# loading the saved model
-loaded_model = pickle.load(open('C:/work/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('/home/sentieo/Deploying_ml/trained_model(1).sav', 'rb'))
 
 
 
@@ -53,7 +45,7 @@ def main():
     RestingBP = st.text_input('Blood Pressure value')
     chol = st.text_input('Cholestrol Level')
     MaxHeartRate = st.text_input('Maximum Heart Rate')
-    exng = st.text_input('exercise induced angina(1 = yes; 0 = no)')
+    exng = st.text_input('Exercise Induced Angina (1 = yes; 0 = no)')
     ChestPain = st.text_input('Chest Pain level(Value 1: typical angina Value 2: atypical angina Value 3: non-anginal pain Value 4: asymptomatic)')
     fbs = st.text_input('Fasting Blood Sugar value(fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)')
     
@@ -73,5 +65,5 @@ def main():
     
     
     
-if __name__ == '__main__':
+if _name_ == '_main_':
     main()
