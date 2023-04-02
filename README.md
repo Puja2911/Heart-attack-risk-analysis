@@ -12,3 +12,5 @@ Dataset used:https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-ana
 ML Model applied: Logistic Regression
 
 Accuracy:81.9672131147541%
+
+Idea Explained-https://www.canva.com/design/DAFe7hgm7qs/v-BydeIeDkC8qAtG86r2wg/view?utm_content=DAFe7hgm7qs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
